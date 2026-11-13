@@ -115,6 +115,21 @@ class CardTests(unittest.TestCase):
         self.assertEqual(card.verdict, "blocked")
         self.assertIsNone(card.verdict_title)
 
+    def test_conflicting_durations_on_matching_bytes_do_not_fit(self):
+        lines = parse_list("Forest Journey\n")
+        digest = hashlib.sha256(b"same-bytes").hexdigest()
+        media = [
+            MediaItem("video/a.mkv", "forest journey", digest, 90, "en"),
+            MediaItem("video/b.mkv", "forest journey", digest, 100, "en"),
+        ]
+        card = build_card(lines, media, parse_clock("19:00"), parse_clock("21:00"))
+        self.assertFalse(card.rows[0].split)
+        self.assertIsNone(card.rows[0].duration_min())
+        self.assertEqual(card.verdict, "blocked")
+        text = render_card(card, list_label="list.txt", start="19:00", finish="21:00")
+        self.assertIn("duration_min: unknown", text)
+        self.assertNotIn("Named title:", text)
+
     def test_unknown_duration_cannot_fit_a_deadline(self):
         lines = parse_list("Forest Journey\n")
         media = [_item("Forest Journey", b"a", None, None)]

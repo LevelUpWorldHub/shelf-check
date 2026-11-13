@@ -63,7 +63,7 @@ A file that is on disk but not returned by shortlist is a miss. Do not promote i
 
 `delegate --target media-agent --instruction 'For each hit path in the shortlist result, run subtitle-search and return the real candidate languages and file ids. If a path has no candidates, say no results for subtitles of that path. Do not download.'`
 
-7. Build the card from those real results, using [decision rules](references/decision-rules.md). Show it to the user. Then stop and wait. Playback has not started.
+7. The parent builds the card. Apply [decision rules](references/decision-rules.md) to the real results from the steps above. Do not delegate the verdict, and do not ask an expert to pick a similar film, to prefer a newer file, or to guess a smudged line. Show the card, then stop and wait. Playback has not started. The four verdicts, illustrated without claiming a NAS run, are in [the shelf card](references/shelf-card.md).
 
 8. Optional later steps, each only after the card and a new explicit yes for that step. Do one chosen action, then check its terminal result before any other action.
 

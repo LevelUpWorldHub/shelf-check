@@ -15,3 +15,31 @@ Show the card in this order. Use the words the expert returned. Leave a fact out
 A block is useful. Show misses in the same card as hits.
 
 The local rehearsal prints the same fields and adds a banner that the run is not a NAS run. That banner is not part of the NAS card. The rehearsal also labels duration and subtitle lines as fixture facts when they came from a sidecar file.
+
+# Four verdicts
+
+These illustrations apply the decision rules to stated facts. They are not NAS output, and they are not permission to invent a fact the experts did not return.
+
+## One title
+
+Clock 19:00 to 21:00. Forest Journey has two copies and one checksum, and the duration is 118 minutes, so it fits. Long Winter is present, and 150 minutes runs past 21:00. Missing Moon is not on the shelf. One list line is unreadable. An extra file is on disk and is not named.
+
+Verdict: one title, Forest Journey. Say that either path is the same film. Playback has not started.
+
+## Choose
+
+The same three titles, and no clock. Forest Journey and Long Winter are both present, and their copies do not differ. Missing Moon is not on the shelf.
+
+Verdict: choose. Keep list order. Do not pick for the user. Playback has not started.
+
+## Blocked
+
+Readable titles were looked up, and every one missed.
+
+Verdict: blocked. Say no results. Do not offer a different film. Playback has not started.
+
+## Lookup not run
+
+The list has 13 readable titles.
+
+Verdict: lookup not run. Ask which 12 to keep. Do not look up a silent subset.

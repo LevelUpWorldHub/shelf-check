@@ -22,11 +22,11 @@
     },
     {
       "path": "references/shelf-card.md",
-      "sha256": "921730291c543c8533d84169ccca68fb0eeda944dbc56b0111300a8c01760948"
+      "sha256": "ef710e44836cc3fff70901c430c6d6e1ff7cdab49969433b2125142b32ddaeae"
     },
     {
       "path": "references/user-guide.md",
-      "sha256": "cfb87b8c816fac27f258a669bb303ceab1f5f7a0605c0c6b727357e8738cdae2"
+      "sha256": "3f1402b97e0d89bc3bac093ad6bc7e3a19c744112da6726fea6df97e12fc3637"
     },
     {
       "path": "references/validation-plan.md",
@@ -34,7 +34,7 @@
     },
     {
       "path": "SKILL.md",
-      "sha256": "32834c673361b10140ad3b19167e25d9c05f84f470f99914fd0b39f312fed2fa"
+      "sha256": "82ab87d9835fd4af9d1e147b15f7ec72da8fc4e017feee9315dc26c616a36a12"
     }
   ],
   "summary": {

@@ -42,3 +42,18 @@ Gap: the same as user value. The NAS-shaped result is easier to see in Python th
 1. Put a worked card, labeled as a rehearsal illustration, inside the skill package.
 2. Say that the parent applies `decision-rules.md` and does not delegate the verdict to an expert.
 3. Add a unit test for conflicting durations.
+
+## Round 2
+
+Closed the three Round 1 gaps. The shelf-card reference now shows one title, choose, blocked, and lookup not run, and it says those illustrations are not NAS output. The workflow says the parent applies the decision rules and does not delegate the verdict. A unit test covers two matching checksums with different durations: duration stays unknown and the deadline blocks a start.
+
+Re-ran the official checker and the test suite after the edits.
+
+| Criterion | Score | Change |
+| --- | ---: | --- |
+| User Value | 9.5 | The uploaded package now shows the card a person would read, including a block and an empty lookup. |
+| Innovation & Differentiation | 9.5 | The product is the verdict under fixed rules, not a shortlist summary the model may relax. |
+| Technical Quality | 9.5 | Checker still `static-pass` with zero warnings. 19 tests pass, including the duration conflict. |
+| AI NAS Fit & Validation | 9.5 | The card is defined from shortlist hits, checksums, duration, and subtitle facts, with play kept off the default path. |
+
+No criterion moved backward. Residual limits stay in the proposal: OCR can fail, twelve is the shortlist cap, and catalog 2.2.0 marks search play as approval none. Those are disclosed behaviors, not missing workflow. Stopping here. The bar was 9.5 on every criterion.
