@@ -1,0 +1,17 @@
+[project]
+name = "shelf-check"
+version = "0.1.0"
+description = "Local rehearsal of the Shelf Check skill for the UGREEN Hackathon 2026"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [{ name = "LevelUpWorldHub" }]
+
+[project.scripts]
+shelf-check = "shelfcheck.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

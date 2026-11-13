@@ -1,0 +1,46 @@
+{
+  "checkFormatVersion": "2.0.0",
+  "status": "static-pass",
+  "target": {
+    "skillName": "shelf-check"
+  },
+  "catalog": {
+    "checkedVersion": "2.2.0"
+  },
+  "files": [
+    {
+      "path": "references/catalog-notes.md",
+      "sha256": "8bff0a24bc1a500f255b9782f1c3888858c8d211e91fc878467d93748b9b351c"
+    },
+    {
+      "path": "references/decision-rules.md",
+      "sha256": "fc741fb97d5798a3654641948dd5c787c4de326145b1450f3209f8ce07976d6e"
+    },
+    {
+      "path": "references/disclosures.md",
+      "sha256": "b749acebb396bd0a89213b5e7927ff8c958affa3759b07cf8f977afdae51e033"
+    },
+    {
+      "path": "references/shelf-card.md",
+      "sha256": "921730291c543c8533d84169ccca68fb0eeda944dbc56b0111300a8c01760948"
+    },
+    {
+      "path": "references/user-guide.md",
+      "sha256": "cfb87b8c816fac27f258a669bb303ceab1f5f7a0605c0c6b727357e8738cdae2"
+    },
+    {
+      "path": "references/validation-plan.md",
+      "sha256": "e1a91bff8e5a3ed6130022f1ee90f44738bc0e499074c97ed82c1143b0b35e69"
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "32834c673361b10140ad3b19167e25d9c05f84f470f99914fd0b39f312fed2fa"
+    }
+  ],
+  "summary": {
+    "errors": 0,
+    "warnings": 0,
+    "info": 0
+  },
+  "diagnostics": []
+}

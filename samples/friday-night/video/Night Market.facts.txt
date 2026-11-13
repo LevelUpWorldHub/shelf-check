@@ -1,0 +1,2 @@
+duration_min: 90
+subtitle_languages: en
