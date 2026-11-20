@@ -131,9 +131,7 @@ def _is_readable(stripped: str) -> bool:
         return False
     if stripped.lower().startswith("unreadable:"):
         return False
-    if _QUESTIONS.match(stripped):
-        return False
-    return True
+    return not _QUESTIONS.match(stripped)
 
 
 def fit_label(

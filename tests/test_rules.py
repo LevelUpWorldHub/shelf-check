@@ -10,8 +10,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from shelfcheck.library import load_list, load_media  # noqa: E402
-from shelfcheck.rules import (  # noqa: E402
+from shelfcheck.library import load_list, load_media
+from shelfcheck.rules import (
     SHORTLIST_LIMIT,
     MediaItem,
     build_card,
