@@ -65,6 +65,6 @@ def main() -> None:
 if __name__ == "__main__":
     try:
         main()
-    except Exception as error:  # noqa: BLE001
+    except Exception as error:
         print(f"error: {error}", file=sys.stderr)
         raise

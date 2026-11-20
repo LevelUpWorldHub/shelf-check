@@ -10,7 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 
-from render_proposal import WORD_LIMIT, answer_word_count  # noqa: E402
+from render_proposal import WORD_LIMIT, answer_word_count
 
 
 class ProposalTests(unittest.TestCase):
@@ -29,7 +29,7 @@ class ProposalTests(unittest.TestCase):
         self.assertTrue(data.startswith(b"%PDF"))
         self.assertLessEqual(len(data), 1024 * 1024)
         streams = []
-        for match in re.finditer(rb"stream\r?\n(.*?)\r?\nendstream", data, re.S):
+        for match in re.finditer(rb"stream\r?\n(.*?)\r?\nendstream", data, re.DOTALL):
             streams.append(zlib.decompress(match.group(1)))
         visible = b" ".join(streams)
         self.assertIn(b"Shelf Check", visible)

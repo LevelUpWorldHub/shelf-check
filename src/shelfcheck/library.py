@@ -9,6 +9,7 @@ from pathlib import Path
 
 from shelfcheck.rules import MEDIA_EXTENSIONS, MediaItem, normalize_title
 
+
 class FactsError(ValueError):
     pass
 
